@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Sinatra Caesar Cipher</title>
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="column">
+      <h1><span>C</span>ae<span>s</span>ar <span>C</span>iph<span>er</span></h1>
+      <form>
+        <div class="section">
+          <label>What phrase would you like to encrypt?</label>
+          <input type='text' name='text'/>
+        </div>
+        <div class="section">
+          <label>Number to shift by?</label>
+          <input type="number" name="shift"></br>
+        </div>
+        <div class="section">
+          <input type="submit" id="submit" value="Encrypt">
+        </div>
+      </form>
+        <% unless text.nil? || text.empty? %>
+          <div class="phrase">
+            <h2>Phrase: </h2><br>
+            <div class="output">
+              <%= text %><br>
+            </div>
+          </div>
+          <div class="result">
+            <h2>Result: </h2></br>
+            <div class="output">
+              <span>
+                <%= result %>
+              </span>
+          </div>
+          </div>
+        <% end %>
+    </div>
+  </body>
+</html>

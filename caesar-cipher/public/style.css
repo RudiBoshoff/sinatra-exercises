@@ -1,0 +1,93 @@
+h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 72px;
+  text-decoration: underline;
+  color: #292;
+}
+
+h2 {
+  padding: 10px 0 0 20px;
+  margin: 0;
+}
+span {
+  color: #90f13d;
+}
+
+body {
+  font-size: 20px;
+  background-color: #222;
+  color: #3ce23c;
+}
+
+label {
+  padding: 5px 0;
+  display: block;
+}
+
+input {
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#submit {
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #3ce23c;
+  width: 250;
+}
+
+#submit:hover {
+  background-color: #90f13d;
+}
+
+.section {
+  padding: 10px 30px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.phrase {
+  color: grey;
+  padding: 0 30px;
+  border: 0;
+  word-wrap: break-word;
+}
+
+.result {
+  color: #90f13d;
+  padding: 0 30px;
+  border: 0;
+  word-wrap: break-word;
+}
+
+.output {
+  border: 2px solid grey;
+  padding: 20px 30px;
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.column {
+  display: block;
+  width: 25vw;
+  min-width: 600px;
+  background-color: black;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+input {
+  padding: 5px 12px;
+  margin-top: 10px;
+}
+input[name="shift"] {
+  width: 100px;
+ }

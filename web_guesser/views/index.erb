@@ -1,0 +1,42 @@
+
+<h1>
+Guess a number:
+</h1>
+
+<form>
+  <input type='text' name='guess' />
+  <input type='submit' value='Guess!' />
+</form>
+
+<% if cheat == 'true' %>
+  <style> body {background: blue;}</style>
+  Cheat mode activated.
+  The secret number is <%= number %>
+<% end %>
+
+
+<% if guess != 0 %>
+  <% if guess < number %>
+    <% message = 'too small' %>
+    <style> body {background: pink;}</style>
+    <% if number - guess > 50 %>
+      <% message = 'TOO SMALL' %>
+      <style> body {background: red;}</style>
+    <% end %>
+  <% elsif guess > number %>
+    <% message = "too big"%>
+    <style> body {background: pink;}</style>
+    <% if guess - number > 50 %>
+      <% message = 'TOO BIG' %>
+      <style> body {background: red;}</style>
+    <% end %>
+  <% else %>
+    <% message = "GOOD GUESS" %>
+    <style> body {background: green;}</style>
+  <% end %>
+
+  <%= message%>
+  <% if number == guess%>
+    The secret number is <%= number %>
+  <% end %>
+<% end %>

@@ -1,0 +1,14 @@
+<form method="POST">
+  <span>Guess a letter:</span>
+  <input type="text" name="letter" maxlength="1" autocomplete="off"/>
+  <input type="submit" value="Search"/>
+  <br/>
+</form>
+<p>Letters:
+  <%= @hidden_letters.join %></p>
+<p>Answer:
+  <%= @answer.join %></p>
+<p>Guess:
+  <%= @user_guess.downcase %></p>
+<p>Wrong Letters:
+  <%= @wrong_letters %></p>

@@ -1,0 +1,59 @@
+h1 {
+  color: #903;
+  font: 32px/1 Helvetica, Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 40px;
+  line-height: 80px;
+  background: transparent url(/images/logo.png) 0 0 no-repeat;
+  padding-left: 84px;
+}
+
+p {
+  font: 13px/1.4 Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+
+a {
+  padding: 10px 20px;
+  color: white;
+  background: #333;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  background: #999;
+}
+
+li {
+  padding: 20px;
+  display: inline;
+}
+
+section {
+  border: 0;
+  border: 3px solid #111;
+}
+
+.view {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  color: white;
+  background: #555;
+}
+
+.view > * {
+  font-size: 30px;S
+}
